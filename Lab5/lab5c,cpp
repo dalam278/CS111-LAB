@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+    double area ( double a ,double b, double c) {
+      double p = ((a+b+c))/2;
+      return sqrt(p*(p-a)*(p-b)*(p-c));
+    }
+    int main() {
+		cout << "enter lengths of three sides of triangle :";
+				int side1;
+        cout<<" side 1 : ";
+    	cin>>side1;
+      cout << endl;
+      int side2;
+        cout<<" side 2 : ";
+    	cin>>side2;
+      cout << endl;
+          int side3;
+        cout<<" side 3 : ";
+    	cin>>side3;	
+     cout << endl;
+        cout<<" The area of the triangle is : "<< area ( side1, side2,side3) ;
+        
+    }
